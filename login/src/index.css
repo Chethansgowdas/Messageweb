@@ -1,0 +1,187 @@
+/* App Container */
+.app-container {
+  position: relative;
+  height: 100vh;
+  background: url('https://unsplash.com/photos/icon-Az0kxo5clDs') no-repeat center center;
+  background-size: cover;
+  animation: backgroundAnimation 12s infinite alternate; /* Animation applied */
+  overflow: hidden;
+}
+
+/* Overlay for Text */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Darken the background for text visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Title & Subtitle */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+/* Toggle Button Styles */
+.toggle-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  display: none; /* Initially hidden */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f2f5;
+}
+
+/* Show dropdown on button click */
+.toggle-button:focus + .dropdown-menu {
+  display: block;
+}
+
+/* Login Form Container */
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form Styling */
+.form {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Remember Me checkbox styling */
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.remember-me label {
+  margin: 0;
+}
+
+/* Button Styling */
+.login-button,
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover,
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.link-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+/* CSS Animation for Background */
+@keyframes backgroundAnimation {
+  0% {
+    background-image: url('https://via.placeholder.com/1200x800/ff7b7b'); /* First image */
+  }
+  33% {
+    background-image: url('https://via.placeholder.com/1200x800/7bff7b'); /* Second image */
+  }
+  66% {
+    background-image: url('https://via.placeholder.com/1200x800/7b7bff'); /* Third image */
+  }
+  100% {
+    background-image: url('https://via.placeholder.com/1200x800/ff7b7b'); /* First image again */
+  }
+}
