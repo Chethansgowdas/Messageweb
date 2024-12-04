@@ -1,7 +1,7 @@
 // SpanList.js
 import React from "react";
 
-const SpanList = () => {
+const Loginjs = () => {
   return (
     <div>
         <div class="container">
@@ -35,4 +35,4 @@ const SpanList = () => {
   );
 };
 
-export default SpanList;
+export default Loginjs;

@@ -1,7 +1,7 @@
 // Signupdiv.js
 import React from "react";
 
-const Signupdiv = () => {
+const Signupjs = () => {
   return (
     <div>
         <div class="container">
@@ -33,4 +33,4 @@ const Signupdiv = () => {
   );
 };
 
-export default Signupdiv;
+export default Signupjs;
