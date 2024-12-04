@@ -152,8 +152,13 @@ h2 {
     font-weight: 600;
 }
 
-.btn-l{
-    
+.top-left {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin: 0;
+    padding: 10px;
+    z-index: 1000;
 }
 .signup-link {
     margin: 20px 0 10px;
