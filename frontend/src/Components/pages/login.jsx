@@ -4,7 +4,7 @@ import React from "react";
 const Loginjs = () => {
   return (
     <div>
-        <div class="container">
+      <div class="container">
         <div class="login-box">
             <h2>Login</h2>
             <form action="#">

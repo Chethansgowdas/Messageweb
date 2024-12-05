@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import Logindiv from "./login";
+import Signupdiv from "./Signup";
 
 const Homepagejs = () => {
+  const [activeComponent, setActiveComponent] = useState(null);
+
   return (
   <div className="top-left">
     <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
