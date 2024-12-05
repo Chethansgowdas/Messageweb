@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logindiv from "./login";
 import Signupdiv from "./Signup";
+import '../CSS/styles.css';
 
 const Homepagejs = () => {
   const [activeComponent, setActiveComponent] = useState(null);
@@ -29,7 +30,7 @@ const Homepagejs = () => {
     </ul>
     <div className="tab-content" id="pills-tabContent">
       <div className={`tab-pane fade ${activeComponent === 'home' ? 'show active' : ''}`} id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabIndex="0">Home Content</div>
-      <div className={`tab-pane fade ${activeComponent === 'profile' ? 'show active' : ''}`} id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabIndex="0">Profile Content</div>
+      <div className={`tab-pane fade ${activeComponent === 'profile' ? 'show active' : ''}`} id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabIndex="0">Profile Content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus, est magnam illo, ad molestias dolor eligendi, quam error dolorem quibusdam obcaecati natus. Consequuntur, ullam iste quasi facere corporis ratione.</div>
       <div className={`tab-pane fade ${activeComponent === 'contact' ? 'show active' : ''}`} id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabIndex="0">Contact Content</div>
       <div className={`tab-pane fade ${activeComponent === 'login' ? 'show active' : ''}`} id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab" tabIndex="0"><Logindiv /></div>
       <div className={`tab-pane fade ${activeComponent === 'signup' ? 'show active' : ''}`} id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab" tabIndex="0"><Signupdiv /></div>
